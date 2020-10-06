@@ -4,19 +4,18 @@
 
 using namespace std;
 
-int main(){
-    int left=0, right, mid;
+int binary_search(vector<int> &a){
+    int left=0, right, mid, key;
     int answer = 0;
     // suppose the a array is argument 
-    vector<int> a;
     sort(a.begin(), a.end());
     
     right = a.size() - 1;
     while(left <= right){
         mid = (left+right) / 2;
         if(a[mid] == key){
-            answer = mid;
-            break;
+            answer = mid+1;
+            return answer; // index of key
         }
         else if (a[mid] < key){
             left = mid + 1;
@@ -25,5 +24,4 @@ int main(){
             right = mid - 1;
         }
     }
-    
 }
