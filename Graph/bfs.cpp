@@ -42,7 +42,7 @@ void bfs(int x, int y){
                     // 해당 단지의 집의 수를 증가시킴
                     groups[group_id]++;
 
-                    // 큐에 현재 nx,ny를 추가
+                    // 큐에 현재 nx,ny를 추가 
                     q.push(make_pair(nx,ny));   
                 }
             }
