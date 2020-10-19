@@ -3,7 +3,7 @@
 #include <stdio.h>
 using namespace std;
 
-int ch[11];
+int n, ch[11];
 int dfs(int v){
     if(L == n+1) {
         for(int i=0; i<n; i++){
@@ -20,6 +20,7 @@ int dfs(int v){
 int main()
 {
     freopen("input.txt", "rt", stdin);
+    scanf("%d", &n);
     dfs(1);
     return 0;
 }
