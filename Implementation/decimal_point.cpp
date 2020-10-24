@@ -8,11 +8,11 @@ int main(){
     double x = 35.1267;
     x = round(x*100) / 100.0 // 35.13
     
-    // 올림
+    // 
     double x = 34.25;
     x = floor(x) // 35
     
-    // 내림
+    // 올림
     double x = 34.25;
     x = ceil(x) // 34
 }
